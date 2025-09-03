@@ -42,7 +42,7 @@ pipeline {
                 branch 'main'  // apply only on main branch
             }
             steps {
-                input message: "Do you want to apply Terraform changes?"
+                // input message: "Do you want to apply Terraform changes?"
                 sh """
                   terraform apply -input=false tfplan
                 """
