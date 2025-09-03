@@ -16,7 +16,7 @@ pipeline {
         stage('Init') {
             steps {
                 sh """
-                  terraform init -input=false
+                  terraform init 
                 """
             }
         }
